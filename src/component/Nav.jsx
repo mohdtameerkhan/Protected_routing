@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import {Link} from 'react-router-dom';
+import { Context } from '../context/AuthContext';
 
-const Nav = ()=>
-{
+const Nav = ()=>{
+
+    const {userValid} = useContext(Context)
+
     return(
         <div>
             <ul>
